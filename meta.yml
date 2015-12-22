@@ -4,5 +4,5 @@ id: mtodo-api
 title: mtodo application API
 description: Generic purpose collection of schemas for mtodo application RESTful APIs
 links:
-- href: http://mtodo.com/api
+- href: http://mtodoapp.com/api
   rel: self

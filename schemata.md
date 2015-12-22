@@ -22,7 +22,7 @@ POST /signup
 #### Curl Example
 
 ```bash
-$ curl -n -X POST http://mtodo.com/api/signup \
+$ curl -n -X POST http://mtodoapp.com/api/signup \
   -H "Content-Type: application/json" \
  \
   -d '{
