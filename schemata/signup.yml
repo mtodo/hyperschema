@@ -1,0 +1,45 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+id: schemata/signup
+title: Sign up
+description: Resource representing new user to be created
+stability: prototype
+strictProperties: true
+type:
+- object
+
+definitions:
+  email:
+    description: New user's email
+    readOnly: true
+    format: email
+    type:
+    - string
+
+  password: &password
+    description: New user's password
+    readOnly: true
+    type:
+    - string
+
+  confirm:
+    <<: *password
+    description: New user's password confirmation. Should match `password` field
+
+links:
+- description: Create new user
+  href: /signup
+  method: POST
+  rel: create
+  schema:
+    type:
+    - object
+    properties:
+      email:
+        $ref: /schemata/signup#/definitions/email
+      password:
+        $ref: /schemata/signup#/definitions/password
+      confirm:
+        $ref: /schemata/signup#/definitions/confirm
+
+properties: {}
