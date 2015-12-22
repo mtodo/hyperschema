@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker build -t mtodo/prmd dockerfiles/prmd

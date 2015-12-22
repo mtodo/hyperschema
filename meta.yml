@@ -1,0 +1,8 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+id: mtodo-api
+title: mtodo application API
+description: Generic purpose collection of schemas for mtodo application RESTful APIs
+links:
+- href: http://mtodo.com/api
+  rel: self

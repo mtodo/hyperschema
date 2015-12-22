@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+script/prmd combine --meta meta.yml schemata/ > schemata.json
+script/prmd verify schemata.json
+script/prmd doc schemata.json > schemata.md
