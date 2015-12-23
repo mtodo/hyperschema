@@ -57,7 +57,12 @@
               "confirm": {
                 "$ref": "#/definitions/signup/definitions/confirm"
               }
-            }
+            },
+            "required": [
+              "email",
+              "password",
+              "confirm"
+            ]
           }
         }
       ],

@@ -10,13 +10,14 @@ Create new user
 POST /signup
 ```
 
-#### Optional Parameters
+#### Required Parameters
 
 | Name | Type | Description | Example |
 | ------- | ------- | ------- | ------- |
 | **email** | *email* | New user's email | `"username@example.com"` |
 | **password** | *string* | New user's password | `"example"` |
 | **confirm** | *string* | New user's password confirmation. Should match `password` field | `"example"` |
+
 
 
 #### Curl Example

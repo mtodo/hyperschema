@@ -41,5 +41,9 @@ links:
         $ref: /schemata/signup#/definitions/password
       confirm:
         $ref: /schemata/signup#/definitions/confirm
+    required:
+    - email
+    - password
+    - confirm
 
 properties: {}
